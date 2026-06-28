@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============== TEXT SIZES ============== -->
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_note_row">16sp</dimen>
+    <dimen name="text_size_key">20sp</dimen>
+    <dimen name="text_size_clear_key">14sp</dimen>
+
+    <!-- ============== SCREEN MARGINS / PADDING ============== -->
+    <dimen name="screen_padding">12dp</dimen>
+    <dimen name="title_top_margin">12dp</dimen>
+    <dimen name="title_bottom_margin">16dp</dimen>
+
+    <!-- ============== NOTES TABLE ============== -->
+    <dimen name="note_row_padding_vertical">4dp</dimen>
+    <dimen name="note_row_padding_horizontal">8dp</dimen>
+    <dimen name="notes_table_min_width">90dp</dimen>
+    <dimen name="notes_table_end_margin">16dp</dimen>
+
+    <!-- ============== KEYPAD ============== -->
+    <dimen name="key_margin">4dp</dimen>
+    <dimen name="key_min_width">64dp</dimen>
+    <dimen name="key_min_height">48dp</dimen>
+    <dimen name="key_corner_radius">8dp</dimen>
+    <dimen name="keypad_max_width">320dp</dimen>
+
+    <!-- Guideline percent bias between notes table and keypad in portrait (0..1) -->
+    <item name="guideline_split_percent_portrait" format="float" type="dimen">0.40</item>
+    <item name="guideline_split_percent_landscape" format="float" type="dimen">0.45</item>
+
+</resources>

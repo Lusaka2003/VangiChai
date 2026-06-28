@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Style for each "500: 0" style row in the notes table -->
+    <style name="NoteRowStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/note_row_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/note_row_padding_vertical</item>
+        <item name="android:paddingStart">@dimen/note_row_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/note_row_padding_horizontal</item>
+        <item name="android:textSize">@dimen/text_size_note_row</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <!-- Style for each digit / clear key on the numeric keypad -->
+    <style name="KeyStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/key_margin</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_gravity">fill_horizontal</item>
+        <item name="android:minWidth">@dimen/key_min_width</item>
+        <item name="android:minHeight">@dimen/key_min_height</item>
+        <item name="android:textSize">@dimen/text_size_key</item>
+        <item name="android:textColor">@color/key_text</item>
+        <item name="android:backgroundTint">@color/key_background</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+</resources>

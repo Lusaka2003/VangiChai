@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============== TEXT SIZES ============== -->
+    <dimen name="text_size_title">28sp</dimen>
+    <dimen name="text_size_note_row">22sp</dimen>
+    <dimen name="text_size_key">28sp</dimen>
+    <dimen name="text_size_clear_key">18sp</dimen>
+
+    <!-- ============== SCREEN MARGINS / PADDING ============== -->
+    <dimen name="screen_padding">24dp</dimen>
+    <dimen name="title_top_margin">24dp</dimen>
+    <dimen name="title_bottom_margin">28dp</dimen>
+
+    <!-- ============== NOTES TABLE ============== -->
+    <dimen name="note_row_padding_vertical">8dp</dimen>
+    <dimen name="note_row_padding_horizontal">16dp</dimen>
+    <dimen name="notes_table_min_width">160dp</dimen>
+    <dimen name="notes_table_end_margin">32dp</dimen>
+
+    <!-- ============== KEYPAD ============== -->
+    <dimen name="key_margin">8dp</dimen>
+    <dimen name="key_min_width">96dp</dimen>
+    <dimen name="key_min_height">72dp</dimen>
+    <dimen name="key_corner_radius">12dp</dimen>
+    <dimen name="keypad_max_width">480dp</dimen>
+
+    <item name="guideline_split_percent_portrait" format="float" type="dimen">0.38</item>
+    <item name="guideline_split_percent_landscape" format="float" type="dimen">0.42</item>
+
+</resources>

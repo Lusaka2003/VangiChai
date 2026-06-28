@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/screen_padding"
+    tools:context=".MainActivity">
+
+    <!-- Title: "Taka: <amount>" -->
+    <TextView
+        android:id="@+id/tvTaka"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_top_margin"
+        android:gravity="center"
+        android:text="@string/taka_label"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Vertical guideline splitting notes table (left) and keypad (right) -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/guideline_split_percent_portrait" />
+
+    <!-- Notes table: left column, 8 rows -->
+    <LinearLayout
+        android:id="@+id/notesTable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_bottom_margin"
+        android:layout_marginEnd="@dimen/notes_table_end_margin"
+        android:minWidth="@dimen/notes_table_min_width"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTaka">
+
+        <TextView
+            android:id="@+id/row500"
+            style="@style/NoteRowStyle"
+            tools:text="500: 0" />
+        <TextView
+            android:id="@+id/row100"
+            style="@style/NoteRowStyle"
+            tools:text="100: 0" />
+        <TextView
+            android:id="@+id/row50"
+            style="@style/NoteRowStyle"
+            tools:text="50: 0" />
+        <TextView
+            android:id="@+id/row20"
+            style="@style/NoteRowStyle"
+            tools:text="20: 0" />
+        <TextView
+            android:id="@+id/row10"
+            style="@style/NoteRowStyle"
+            tools:text="10: 0" />
+        <TextView
+            android:id="@+id/row5"
+            style="@style/NoteRowStyle"
+            tools:text="5: 0" />
+        <TextView
+            android:id="@+id/row2"
+            style="@style/NoteRowStyle"
+            tools:text="2: 0" />
+        <TextView
+            android:id="@+id/row1"
+            style="@style/NoteRowStyle"
+            tools:text="1: 0" />
+    </LinearLayout>
+
+    <!-- Keypad: right column, 4x3 grid via GridLayout -->
+    <GridLayout
+        android:id="@+id/keypad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_bottom_margin"
+        android:columnCount="3"
+        android:rowCount="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical"
+        app:layout_constraintTop_toBottomOf="@id/tvTaka"
+        app:layout_constraintWidth_max="@dimen/keypad_max_width">
+
+        <Button android:id="@+id/btn1" style="@style/KeyStyle" android:text="1" />
+        <Button android:id="@+id/btn2" style="@style/KeyStyle" android:text="2" />
+        <Button android:id="@+id/btn3" style="@style/KeyStyle" android:text="3" />
+
+        <Button android:id="@+id/btn4" style="@style/KeyStyle" android:text="4" />
+        <Button android:id="@+id/btn5" style="@style/KeyStyle" android:text="5" />
+        <Button android:id="@+id/btn6" style="@style/KeyStyle" android:text="6" />
+
+        <Button android:id="@+id/btn7" style="@style/KeyStyle" android:text="7" />
+        <Button android:id="@+id/btn8" style="@style/KeyStyle" android:text="8" />
+        <Button android:id="@+id/btn9" style="@style/KeyStyle" android:text="9" />
+
+        <Button android:id="@+id/btn0" style="@style/KeyStyle" android:text="0" />
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/KeyStyle"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/clear_label"
+            android:textSize="@dimen/text_size_clear_key" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

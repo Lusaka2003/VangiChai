@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VangtiChai</string>
+
+    <string name="taka_label">Taka:</string>
+    <string name="taka_label_format">Taka: %s</string>
+    <string name="clear_label">CLEAR</string>
+
+    <string name="note_row_format">%d: %d</string>
+
+    <string name="key_state_amount">KEY_AMOUNT_STRING</string>
+</resources>
